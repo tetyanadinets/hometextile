@@ -1190,6 +1190,32 @@
             </form>
           </div>
         </div>
+        <div class="popup" id="to-book">
+          <div class="popup__content">
+            <div class="close"></div>
+            <h4>Заполните поля ниже, мы с вами свяжемся.</h4>
+            <form class="registration-form regiatration_to-book registrationForm">
+              <div class="form-item valid">
+                <label>Имя*</label>
+                <input type="text" id="name" name="name"/><span class="error-text">*заполните поле</span>
+              </div>
+              <div class="form-item valid">
+                <label>Телефон*</label>
+                <input type="tel" name="tel" placeholder="+38 (___) ___ - __ - __"/><span class="error-text">*неверно указан телефон</span>
+              </div>
+              <div class="form-item">
+                <label>Сколько едениц товара Вас интересует?</label>
+                <input type="number" name="number" placeholder="Колличество" min="0"/>
+              </div>
+              <div class="form-item">
+                <textarea type="textarea" name="textarea" placeholder="Примечание"></textarea>
+              </div>
+              <div class="form-action">
+                <button class="btn btn-solid" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </footer>
     </div>
     <link rel="stylesheet" href="css/libs.css"/>
