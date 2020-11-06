@@ -439,6 +439,7 @@
           <li style="display:block; margin-bottom:20px; font-weight:bold;">=== Документы ===</li>
           <li><a href="invoice.html" style="display:block; margin-bottom:20px;">Счет-фактура</a></li>
           <li><a href="waybill.html" style="display:block; margin-bottom:20px;">Накладная</a></li>
+          <li><a class="popupBtn" href="#remove-company" style="display:block; margin-bottom:20px;">Попап подтвержение удаления предприятия</a></li>
         </ul>
       </div>
       <footer class="footer">
@@ -595,6 +596,12 @@
                 <button class="btn btn-solid" type="submit">Отправить</button>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="popup" id="remove-company">
+          <div class="popup__content">
+            <div class="close"></div>
+            <h4>Вы точно хотите удалить предприятие ?</h4><a class="btn btn-solid" href="href">Да</a><a class="btn btn-solid" href="href">Нет</a>
           </div>
         </div>
       </footer>

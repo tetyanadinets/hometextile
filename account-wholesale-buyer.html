@@ -773,6 +773,558 @@
                   </div>
                   <div class="registration-form registration-form_companies">
                     <div class="registration-form__top">
+                      <form class="registration-form__edit-row parent-form validForm">
+                        <div class="form-item form-item_edit">
+                          <div class="company-title">Название предприятия 1</div>
+                          <button class="edit edit-open"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5494 0.791742C14.6353 -0.120685 13.1551 -0.120685 12.2411 0.791742L11.413 1.6244L2.59768 10.435L2.57895 10.4539C2.57441 10.4584 2.57441 10.4633 2.56958 10.4633C2.56021 10.4773 2.54616 10.4912 2.53694 10.5053C2.53694 10.51 2.53211 10.51 2.53211 10.5146C2.52275 10.5287 2.51821 10.5381 2.5087 10.5521C2.50416 10.5568 2.50416 10.5613 2.49947 10.5662C2.49479 10.5802 2.49011 10.5896 2.48528 10.6036C2.48528 10.6082 2.48074 10.6082 2.48074 10.613L0.52489 16.4944C0.467516 16.6619 0.511132 16.8473 0.637151 16.9716C0.7257 17.059 0.845133 17.1079 0.969395 17.1074C1.02018 17.1065 1.07053 17.0986 1.11912 17.084L6.99604 15.1235C7.00058 15.1235 7.00058 15.1235 7.00541 15.1189C7.02019 15.1145 7.03439 15.1082 7.04741 15.1C7.05107 15.0996 7.05429 15.098 7.05693 15.0955C7.07083 15.0861 7.08957 15.0766 7.10362 15.0673C7.11752 15.058 7.13172 15.044 7.14577 15.0346C7.15045 15.0298 7.15499 15.0298 7.15499 15.0253C7.15982 15.0206 7.16919 15.016 7.17387 15.0065L16.8173 5.3631C17.7297 4.44906 17.7297 2.96889 16.8173 2.055L15.5494 0.791742ZM6.84631 14.0238L3.58973 10.7674L11.7405 2.6166L14.9971 5.87303L6.84631 14.0238ZM3.13103 11.633L5.97604 14.4779L1.70399 15.9002L3.13103 11.633ZM16.1576 4.70798L15.6616 5.20869L12.4049 1.95196L12.9057 1.4514C13.4536 0.904003 14.3416 0.904003 14.8895 1.4514L16.1622 2.72403C16.7059 3.27435 16.7039 4.16029 16.1576 4.70798Z" fill="#969696"/>
+</svg>
+
+                          </button><a class="delete close" href data-remove></a>
+                        </div>
+                        <div class="edit-form">
+                          <div class="form-item">
+                            <label data-for="name-company_">Название<span class="label-desc">(для внутреннего использования)</span></label>
+                            <input class="company-name" type="text" data-id="name-company_" data-name="name-company_">
+                          </div>
+                          <div class="form-item select">
+                            <label data-for="entrepreneurial-activity_">Форма собственности</label>
+                            <SELECT class="hidden-select" data-name="entrepreneurial-activity_">
+                              <option disabled selected></option>
+                              <option value="">ТОВ</option>
+                              <option value="">ФОП</option>
+                              <option value="">ПП</option>
+                            </SELECT>
+                          </div>
+                          <div class="form-item">
+                            <label data-for="company_">Полное название предприятия<span class="label-desc">(для оформлении документов)</span></label>
+                            <input type="text" data-name="company_" data-id="company_">
+                          </div>
+                          <div class="form-item">
+                            <label data-for="code_">Код ЕДРПОУ или ИНН</label>
+                            <input type="text" data-name="code_" data-id="code_">
+                          </div>
+                          <div class="fieldset fieldset_choose-radio">
+                            <label>Являетесь ли Вы плательщиком НДС?</label>
+                            <div class="choose-radio choose-radio_adress">
+                              <input type="radio" data-name="vat_payer_" value="vat_payer" data-id="vat_payer_" checked="checked">
+                              <label data-for="vat_payer_"><span>Да, являюсь.</span></label>
+                            </div>
+                            <div class="choose-radio choose-radio_adress">
+                              <input type="radio" data-name="vat_payer_" value="not_vat_payer" data-id="not_vat_payer_">
+                              <label data-for="not_vat_payer_"><span>Нет, не являюсь.</span></label>
+                            </div>
+                            <div class="form-item choose-radio__input">
+                              <label>Номер плательщика НДС</label>
+                              <input type="text" data-id="vat_payer_number_" data-name="vat_payer_number_">
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_adress fieldset_juridical">
+                            <label class="title">Юридический адрес</label>
+                            <div class="fieldset__inner">
+                              <div class="form-item">
+                                <label data-for="index_">Индекс</label>
+                                <input type="text" data-id="index_" data-name="index_">
+                              </div>
+                              <div class="form-item select">
+                                <label data-for="city_">Город</label>
+                                <SELECT class="hidden-select select-search" data-name="city_">
+                                  <option disabled selected></option>
+                                  <option value="0">Киев</option>
+                                  <option value="0">Одесса</option>
+                                  <option value="0">Днепр</option>
+                                  <option value="0">Чернигов</option>
+                                  <option value="0">Харьков</option>
+                                  <option value="0">Житомир</option>
+                                  <option value="0">Полтава</option>
+                                  <option value="0">Херсон</option>
+                                  <option value="0">Запорожье</option>
+                                  <option value="0">Луганск</option>
+                                  <option value="0">Донецк</option>
+                                  <option value="0">Винница</option>
+                                  <option value="0">Николаев</option>
+                                  <option value="0">Кировоград</option>
+                                  <option value="0">Суммы</option>
+                                  <option value="0">Львов</option>
+                                  <option value="0">Черскассы</option>
+                                  <option value="0">Хмельницк</option>
+                                  <option value="0">Волынь</option>
+                                  <option value="0">Ровно</option>
+                                  <option value="0">Ивано-Франковск</option>
+                                  <option value="0">Тернополь</option>
+                                  <option value="0">Закарпатье</option>
+                                  <option value="0">Черновцы</option>
+                                </SELECT>
+                              </div>
+                              <div class="form-item">
+                                <label data-for="adress_">Адрес</label>
+                                <input type="text" data-name="adress_" data-id="adress_">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_choose-radio">
+                            <label>Фактический адрес совпадает с юридическим?</label>
+                            <div class="choose-radio">
+                              <input type="radio" data-name="radio_" value="radio-adress" data-id="radio_yes_" checked="checked">
+                              <label data-for="radio_yes_"><span>Да, совпадает.</span></label>
+                            </div>
+                            <div class="choose-radio">
+                              <input type="radio" data-name="radio_" value="radio-adress-no" data-id="radio_no_">
+                              <label data-for="radio_no_"><span>Нет, не совпадает.</span></label>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_adress fieldset_juridical fieldset_actually hide">
+                            <label class="title">Фактический адрес</label>
+                            <div class="fieldset__inner">
+                              <div class="form-item">
+                                <label data-for="index-actually_">Индекс</label>
+                                <input type="text" data-id="index-actually_" data-name="index-actually_">
+                              </div>
+                              <div class="form-item select">
+                                <label data-for="city-actually_">Город</label>
+                                <SELECT class="hidden-select select-search" data-name="city-actually_">
+                                  <option disabled selected></option>
+                                  <option value="Киев">Киев</option>
+                                  <option value="0">Одесса</option>
+                                  <option value="0">Днепр</option>
+                                  <option value="0">Чернигов</option>
+                                  <option value="0">Харьков</option>
+                                  <option value="0">Житомир</option>
+                                  <option value="0">Полтава</option>
+                                  <option value="0">Херсон</option>
+                                  <option value="0">Запорожье</option>
+                                  <option value="0">Луганск</option>
+                                  <option value="0">Донецк</option>
+                                  <option value="0">Винница</option>
+                                  <option value="0">Николаев</option>
+                                  <option value="0">Кировоград</option>
+                                  <option value="0">Суммы</option>
+                                  <option value="0">Львов</option>
+                                  <option value="0">Черскассы</option>
+                                  <option value="0">Хмельницк</option>
+                                  <option value="0">Волынь</option>
+                                  <option value="0">Ровно</option>
+                                  <option value="0">Ивано-Франковск</option>
+                                  <option value="0">Тернополь</option>
+                                  <option value="0">Закарпатье</option>
+                                  <option value="0">Черновцы</option>
+                                </SELECT>
+                              </div>
+                              <div class="form-item">
+                                <label data-for="adress-actually_">Адрес</label>
+                                <input type="text" data-name="adress-actually_" data-id="adress-actually_">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item valid">
+                            <label data-for="email_">Электронная почта*</label>
+                            <input type="email" data-name="email_" data-id="email_"><span class="error-text">*неверно указана почта</span>
+                          </div>
+                          <div class="form-item valid">
+                            <label data-for="tel-actually_">Номер телефона*</label>
+                            <input type="tel" data-id="tel-actually_" data-name="tel-actually_"><span class="error-text">*неверно указан телефон</span>
+                          </div>
+                          <div class="fieldset fieldset_default-adress">
+                            <label class="title">Адрес доставки по умолчанию</label>
+                            <div class="form-item select">
+                              <label data-for="delivery-way_">Способ доставки</label>
+                              <SELECT class="hidden-select delivery-way" data-name="delivery-way_" data-id="delivery-way_">
+                                <option disabled selected></option>
+                                <option value="pickup_of_goods">Самовывоз</option>
+                                <option value="nova_poshta">«Нова Пошта»</option>
+                              </SELECT><span class="message message_np">Доставка по тарифам перевозчика</span>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_pickup hide">
+                            <div class="form-item select">
+                              <label data-for="branch_">Филия</label>
+                              <SELECT class="hidden-select" data-name="branch_" data-id="branch_">
+                                <option disabled selected></option>
+                                <option value="">Київ, вул. Березняківська 8а</option>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_type hide">
+                            <div class="form-item select">
+                              <label data-for="delivery-type_">Тип доставки</label>
+                              <SELECT class="hidden-select delivery-type" data-name="delivery-type_" data-id="delivery-type_">
+                                <option disabled selected></option>
+                                <option value="np-adress">Адресная доставка</option>
+                                <option value="np">На отделение</option>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_np hide">
+                            <div class="form-item select">
+                              <label data-for="np-branch-city_">Город</label>
+                              <SELECT class="hidden-select select-search" data-name="np-branch-city_" data-id="np-branch-city_">
+                                <option disabled selected></option>
+                                <option value="Киев">Киев</option>
+                                <option value="0">Одесса</option>
+                                <option value="0">Днепр</option>
+                                <option value="0">Чернигов</option>
+                                <option value="0">Харьков</option>
+                                <option value="0">Житомир</option>
+                                <option value="0">Полтава</option>
+                                <option value="0">Херсон</option>
+                                <option value="0">Запорожье</option>
+                                <option value="0">Луганск</option>
+                                <option value="0">Донецк</option>
+                                <option value="0">Винница</option>
+                                <option value="0">Николаев</option>
+                                <option value="0">Кировоград</option>
+                                <option value="0">Суммы</option>
+                                <option value="0">Львов</option>
+                                <option value="0">Черскассы</option>
+                                <option value="0">Хмельницк</option>
+                                <option value="0">Волынь</option>
+                                <option value="0">Ровно</option>
+                                <option value="0">Ивано-Франковск</option>
+                                <option value="0">Тернополь</option>
+                                <option value="0">Закарпатье</option>
+                                <option value="0">Черновцы</option>
+                              </SELECT>
+                            </div>
+                            <div class="form-item select">
+                              <label data-for="np-branch_">Отделение</label>
+                              <SELECT class="hidden-select select-search" data-name="np-branch_" data-id="np-branch_">
+                                <option disabled selected></option>
+                                <option value="">Отделение №32, бульв. Дарницкий, 23</option>
+                                <option value="">Отделение №33, бульв. Дарницкий, 23</option>
+                                <option value="">Отделение №31, бульв. Дарницкий, 23</option>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_adress fieldset_np-adress hide">
+                            <div class="fieldset__inner">
+                              <div class="form-item select">
+                                <label data-for="city_">Город</label>
+                                <SELECT class="hidden-select select-search" data-name="city" data-id="city_">
+                                  <option disabled selected></option>
+                                  <option value="Киев">Киев</option>
+                                  <option value="0">Одесса</option>
+                                  <option value="0">Днепр</option>
+                                  <option value="0">Чернигов</option>
+                                  <option value="0">Харьков</option>
+                                  <option value="0">Житомир</option>
+                                  <option value="0">Полтава</option>
+                                  <option value="0">Херсон</option>
+                                  <option value="0">Запорожье</option>
+                                  <option value="0">Луганск</option>
+                                  <option value="0">Донецк</option>
+                                  <option value="0">Винница</option>
+                                  <option value="0">Николаев</option>
+                                  <option value="0">Кировоград</option>
+                                  <option value="0">Суммы</option>
+                                  <option value="0">Львов</option>
+                                  <option value="0">Черскассы</option>
+                                  <option value="0">Хмельницк</option>
+                                  <option value="0">Волынь</option>
+                                  <option value="0">Ровно</option>
+                                  <option value="0">Ивано-Франковск</option>
+                                  <option value="0">Тернополь</option>
+                                  <option value="0">Закарпатье</option>
+                                  <option value="0">Черновцы</option>
+                                </SELECT>
+                              </div>
+                              <div class="form-item">
+                                <label data-for="adress_">Адрес</label>
+                                <input type="text" data-name="adress_" data-id="adress_">
+                              </div>
+                              <div class="form-item">
+                                <label data-for="house_">Дом</label>
+                                <input type="text" data-name="house_" data-id="house_">
+                              </div>
+                              <div class="form-item">
+                                <label data-for="apartment_">Кв</label>
+                                <input type="text" data-name="apartment_" data-id="apartment_">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_foot">
+                            <div class="form-action">
+                              <button class="btn btn-solid" type="submit">Сохранить</button>
+                            </div>
+                            <div class="form-action"><a class="btn btn-solid dismiss-upd" href>Отмена</a></div>
+                          </div>
+                        </div>
+                      </form>
+                      <form class="registration-form__edit-row parent-form validForm">
+                        <div class="form-item form-item_edit">
+                          <div class="company-title">Название предприятия 2</div>
+                          <button class="edit edit-open"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.5494 0.791742C14.6353 -0.120685 13.1551 -0.120685 12.2411 0.791742L11.413 1.6244L2.59768 10.435L2.57895 10.4539C2.57441 10.4584 2.57441 10.4633 2.56958 10.4633C2.56021 10.4773 2.54616 10.4912 2.53694 10.5053C2.53694 10.51 2.53211 10.51 2.53211 10.5146C2.52275 10.5287 2.51821 10.5381 2.5087 10.5521C2.50416 10.5568 2.50416 10.5613 2.49947 10.5662C2.49479 10.5802 2.49011 10.5896 2.48528 10.6036C2.48528 10.6082 2.48074 10.6082 2.48074 10.613L0.52489 16.4944C0.467516 16.6619 0.511132 16.8473 0.637151 16.9716C0.7257 17.059 0.845133 17.1079 0.969395 17.1074C1.02018 17.1065 1.07053 17.0986 1.11912 17.084L6.99604 15.1235C7.00058 15.1235 7.00058 15.1235 7.00541 15.1189C7.02019 15.1145 7.03439 15.1082 7.04741 15.1C7.05107 15.0996 7.05429 15.098 7.05693 15.0955C7.07083 15.0861 7.08957 15.0766 7.10362 15.0673C7.11752 15.058 7.13172 15.044 7.14577 15.0346C7.15045 15.0298 7.15499 15.0298 7.15499 15.0253C7.15982 15.0206 7.16919 15.016 7.17387 15.0065L16.8173 5.3631C17.7297 4.44906 17.7297 2.96889 16.8173 2.055L15.5494 0.791742ZM6.84631 14.0238L3.58973 10.7674L11.7405 2.6166L14.9971 5.87303L6.84631 14.0238ZM3.13103 11.633L5.97604 14.4779L1.70399 15.9002L3.13103 11.633ZM16.1576 4.70798L15.6616 5.20869L12.4049 1.95196L12.9057 1.4514C13.4536 0.904003 14.3416 0.904003 14.8895 1.4514L16.1622 2.72403C16.7059 3.27435 16.7039 4.16029 16.1576 4.70798Z" fill="#969696"/>
+</svg>
+
+                          </button><a class="delete close" href data-remove></a>
+                        </div>
+                        <div class="edit-form">
+                          <div class="form-item">
+                            <label data-for="name-company_">Название<span class="label-desc">(для внутреннего использования)</span></label>
+                            <input class="company-name" type="text" data-id="name-company_" data-name="name-company_">
+                          </div>
+                          <div class="form-item select">
+                            <label data-for="entrepreneurial-activity_">Форма собственности</label>
+                            <SELECT class="hidden-select" data-name="entrepreneurial-activity_">
+                              <option disabled selected></option>
+                              <option value="">ТОВ</option>
+                              <option value="">ФОП</option>
+                              <option value="">ПП</option>
+                            </SELECT>
+                          </div>
+                          <div class="form-item">
+                            <label data-for="company_">Полное название предприятия<span class="label-desc">(для оформлении документов)</span></label>
+                            <input type="text" data-name="company_" data-id="company_">
+                          </div>
+                          <div class="form-item">
+                            <label data-for="code_">Код ЕДРПОУ или ИНН</label>
+                            <input type="text" data-name="code_" data-id="code_">
+                          </div>
+                          <div class="fieldset fieldset_choose-radio">
+                            <label>Являетесь ли Вы плательщиком НДС?</label>
+                            <div class="choose-radio choose-radio_adress">
+                              <input type="radio" data-name="vat_payer_" value="vat_payer" data-id="vat_payer_" checked="checked">
+                              <label data-for="vat_payer_"><span>Да, являюсь.</span></label>
+                            </div>
+                            <div class="choose-radio choose-radio_adress">
+                              <input type="radio" data-name="vat_payer_" value="not_vat_payer" data-id="not_vat_payer_">
+                              <label data-for="not_vat_payer_"><span>Нет, не являюсь.</span></label>
+                            </div>
+                            <div class="form-item choose-radio__input">
+                              <label>Номер плательщика НДС</label>
+                              <input type="text" data-id="vat_payer_number_" data-name="vat_payer_number_">
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_adress fieldset_juridical">
+                            <label class="title">Юридический адрес</label>
+                            <div class="fieldset__inner">
+                              <div class="form-item">
+                                <label data-for="index_">Индекс</label>
+                                <input type="text" data-id="index_" data-name="index_">
+                              </div>
+                              <div class="form-item select">
+                                <label data-for="city_">Город</label>
+                                <SELECT class="hidden-select select-search" data-name="city_">
+                                  <option disabled selected></option>
+                                  <option value="0">Киев</option>
+                                  <option value="0">Одесса</option>
+                                  <option value="0">Днепр</option>
+                                  <option value="0">Чернигов</option>
+                                  <option value="0">Харьков</option>
+                                  <option value="0">Житомир</option>
+                                  <option value="0">Полтава</option>
+                                  <option value="0">Херсон</option>
+                                  <option value="0">Запорожье</option>
+                                  <option value="0">Луганск</option>
+                                  <option value="0">Донецк</option>
+                                  <option value="0">Винница</option>
+                                  <option value="0">Николаев</option>
+                                  <option value="0">Кировоград</option>
+                                  <option value="0">Суммы</option>
+                                  <option value="0">Львов</option>
+                                  <option value="0">Черскассы</option>
+                                  <option value="0">Хмельницк</option>
+                                  <option value="0">Волынь</option>
+                                  <option value="0">Ровно</option>
+                                  <option value="0">Ивано-Франковск</option>
+                                  <option value="0">Тернополь</option>
+                                  <option value="0">Закарпатье</option>
+                                  <option value="0">Черновцы</option>
+                                </SELECT>
+                              </div>
+                              <div class="form-item">
+                                <label data-for="adress_">Адрес</label>
+                                <input type="text" data-name="adress_" data-id="adress_">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_choose-radio">
+                            <label>Фактический адрес совпадает с юридическим?</label>
+                            <div class="choose-radio">
+                              <input type="radio" data-name="radio_" value="radio-adress" data-id="radio_yes_" checked="checked">
+                              <label data-for="radio_yes_"><span>Да, совпадает.</span></label>
+                            </div>
+                            <div class="choose-radio">
+                              <input type="radio" data-name="radio_" value="radio-adress-no" data-id="radio_no_">
+                              <label data-for="radio_no_"><span>Нет, не совпадает.</span></label>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_adress fieldset_juridical fieldset_actually hide">
+                            <label class="title">Фактический адрес</label>
+                            <div class="fieldset__inner">
+                              <div class="form-item">
+                                <label data-for="index-actually_">Индекс</label>
+                                <input type="text" data-id="index-actually_" data-name="index-actually_">
+                              </div>
+                              <div class="form-item select">
+                                <label data-for="city-actually_">Город</label>
+                                <SELECT class="hidden-select select-search" data-name="city-actually_">
+                                  <option disabled selected></option>
+                                  <option value="Киев">Киев</option>
+                                  <option value="0">Одесса</option>
+                                  <option value="0">Днепр</option>
+                                  <option value="0">Чернигов</option>
+                                  <option value="0">Харьков</option>
+                                  <option value="0">Житомир</option>
+                                  <option value="0">Полтава</option>
+                                  <option value="0">Херсон</option>
+                                  <option value="0">Запорожье</option>
+                                  <option value="0">Луганск</option>
+                                  <option value="0">Донецк</option>
+                                  <option value="0">Винница</option>
+                                  <option value="0">Николаев</option>
+                                  <option value="0">Кировоград</option>
+                                  <option value="0">Суммы</option>
+                                  <option value="0">Львов</option>
+                                  <option value="0">Черскассы</option>
+                                  <option value="0">Хмельницк</option>
+                                  <option value="0">Волынь</option>
+                                  <option value="0">Ровно</option>
+                                  <option value="0">Ивано-Франковск</option>
+                                  <option value="0">Тернополь</option>
+                                  <option value="0">Закарпатье</option>
+                                  <option value="0">Черновцы</option>
+                                </SELECT>
+                              </div>
+                              <div class="form-item">
+                                <label data-for="adress-actually_">Адрес</label>
+                                <input type="text" data-name="adress-actually_" data-id="adress-actually_">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-item valid">
+                            <label data-for="email_">Электронная почта*</label>
+                            <input type="email" data-name="email_" data-id="email_"><span class="error-text">*неверно указана почта</span>
+                          </div>
+                          <div class="form-item valid">
+                            <label data-for="tel-actually_">Номер телефона*</label>
+                            <input type="tel" data-id="tel-actually_" data-name="tel-actually_"><span class="error-text">*неверно указан телефон</span>
+                          </div>
+                          <div class="fieldset fieldset_default-adress">
+                            <label class="title">Адрес доставки по умолчанию</label>
+                            <div class="form-item select">
+                              <label data-for="delivery-way_">Способ доставки</label>
+                              <SELECT class="hidden-select delivery-way" data-name="delivery-way_" data-id="delivery-way_">
+                                <option disabled selected></option>
+                                <option value="pickup_of_goods">Самовывоз</option>
+                                <option value="nova_poshta">«Нова Пошта»</option>
+                              </SELECT><span class="message message_np">Доставка по тарифам перевозчика</span>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_pickup hide">
+                            <div class="form-item select">
+                              <label data-for="branch_">Филия</label>
+                              <SELECT class="hidden-select" data-name="branch_" data-id="branch_">
+                                <option disabled selected></option>
+                                <option value="">Київ, вул. Березняківська 8а</option>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_type hide">
+                            <div class="form-item select">
+                              <label data-for="delivery-type_">Тип доставки</label>
+                              <SELECT class="hidden-select delivery-type" data-name="delivery-type_" data-id="delivery-type_">
+                                <option disabled selected></option>
+                                <option value="np-adress">Адресная доставка</option>
+                                <option value="np">На отделение</option>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_np hide">
+                            <div class="form-item select">
+                              <label data-for="np-branch-city_">Город</label>
+                              <SELECT class="hidden-select select-search" data-name="np-branch-city_" data-id="np-branch-city_">
+                                <option disabled selected></option>
+                                <option value="Киев">Киев</option>
+                                <option value="0">Одесса</option>
+                                <option value="0">Днепр</option>
+                                <option value="0">Чернигов</option>
+                                <option value="0">Харьков</option>
+                                <option value="0">Житомир</option>
+                                <option value="0">Полтава</option>
+                                <option value="0">Херсон</option>
+                                <option value="0">Запорожье</option>
+                                <option value="0">Луганск</option>
+                                <option value="0">Донецк</option>
+                                <option value="0">Винница</option>
+                                <option value="0">Николаев</option>
+                                <option value="0">Кировоград</option>
+                                <option value="0">Суммы</option>
+                                <option value="0">Львов</option>
+                                <option value="0">Черскассы</option>
+                                <option value="0">Хмельницк</option>
+                                <option value="0">Волынь</option>
+                                <option value="0">Ровно</option>
+                                <option value="0">Ивано-Франковск</option>
+                                <option value="0">Тернополь</option>
+                                <option value="0">Закарпатье</option>
+                                <option value="0">Черновцы</option>
+                              </SELECT>
+                            </div>
+                            <div class="form-item select">
+                              <label data-for="np-branch_">Отделение</label>
+                              <SELECT class="hidden-select select-search" data-name="np-branch_" data-id="np-branch_">
+                                <option disabled selected></option>
+                                <option value="">Отделение №32, бульв. Дарницкий, 23</option>
+                                <option value="">Отделение №33, бульв. Дарницкий, 23</option>
+                                <option value="">Отделение №31, бульв. Дарницкий, 23</option>
+                              </SELECT>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_adress fieldset_np-adress hide">
+                            <div class="fieldset__inner">
+                              <div class="form-item select">
+                                <label data-for="city_">Город</label>
+                                <SELECT class="hidden-select select-search" data-name="city" data-id="city_">
+                                  <option disabled selected></option>
+                                  <option value="Киев">Киев</option>
+                                  <option value="0">Одесса</option>
+                                  <option value="0">Днепр</option>
+                                  <option value="0">Чернигов</option>
+                                  <option value="0">Харьков</option>
+                                  <option value="0">Житомир</option>
+                                  <option value="0">Полтава</option>
+                                  <option value="0">Херсон</option>
+                                  <option value="0">Запорожье</option>
+                                  <option value="0">Луганск</option>
+                                  <option value="0">Донецк</option>
+                                  <option value="0">Винница</option>
+                                  <option value="0">Николаев</option>
+                                  <option value="0">Кировоград</option>
+                                  <option value="0">Суммы</option>
+                                  <option value="0">Львов</option>
+                                  <option value="0">Черскассы</option>
+                                  <option value="0">Хмельницк</option>
+                                  <option value="0">Волынь</option>
+                                  <option value="0">Ровно</option>
+                                  <option value="0">Ивано-Франковск</option>
+                                  <option value="0">Тернополь</option>
+                                  <option value="0">Закарпатье</option>
+                                  <option value="0">Черновцы</option>
+                                </SELECT>
+                              </div>
+                              <div class="form-item">
+                                <label data-for="adress_">Адрес</label>
+                                <input type="text" data-name="adress_" data-id="adress_">
+                              </div>
+                              <div class="form-item">
+                                <label data-for="house_">Дом</label>
+                                <input type="text" data-name="house_" data-id="house_">
+                              </div>
+                              <div class="form-item">
+                                <label data-for="apartment_">Кв</label>
+                                <input type="text" data-name="apartment_" data-id="apartment_">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="fieldset fieldset_foot">
+                            <div class="form-action">
+                              <button class="btn btn-solid" type="submit">Сохранить</button>
+                            </div>
+                            <div class="form-action"><a class="btn btn-solid dismiss-upd" href>Отмена</a></div>
+                          </div>
+                        </div>
+                      </form>
                     </div>
                     <div class="fieldset fieldset_foot"><a class="link-add" href>+ Добавить новое предприятие</a></div>
                   </div>
@@ -1515,6 +2067,12 @@
                 <button class="btn btn-solid" type="submit">Отправить</button>
               </div>
             </form>
+          </div>
+        </div>
+        <div class="popup" id="remove-company">
+          <div class="popup__content">
+            <div class="close"></div>
+            <h4>Вы точно хотите удалить предприятие ?</h4><a class="btn btn-solid" href="href">Да</a><a class="btn btn-solid" href="href">Нет</a>
           </div>
         </div>
       </footer>
